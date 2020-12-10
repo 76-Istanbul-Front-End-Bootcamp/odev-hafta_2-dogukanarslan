@@ -92,7 +92,7 @@ function katilimSaati(dersSayisi, dersSuresi) {
   var dersSuresiType = typeof dersSuresi;
   var conditions = ['number', 'string'];
   
-  if (conditions.includes(dersSayisiType) || conditions.includes(dersSuresiType)) {
+  if (conditions.includes(dersSayisiType) && conditions.includes(dersSuresiType)) {
     if ('string' === dersSayisiType && !dersSayisi.length) {
       return false
     }
